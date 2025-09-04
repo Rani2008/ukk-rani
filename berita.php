@@ -17,80 +17,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="galeri/LOGO-SMK4.Ba-Cc_BE.png"
-            alt=""
-            width="50"
-            height="50"
-          />
-          <span class="text-white">SMKN 4 TASIKMALAYA</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                profil
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="identitas.html">identitas</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="sejarah.html">sejarah</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="visimisi.html">visi & misi</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="kepalasekolah.html"
-                    >kepala sekolah</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ektakulikuler.html">Ekstrakurikuler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Galeri.html">Galeri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="konsentrasi.html"
-                >konsentrasi keahlian</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="berita.html">Berita</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+   
+      <?php include 'navbar.php';?>
 
      <!-- SECTION BERITA -->
     <section>
@@ -118,7 +46,7 @@
                 />
               </div>
               <div class="card-body">
-                <h4>workshop</h4>
+                <h4>SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja</h4>
                 <a class="btn btn-info" href="https://radartasik.id/2023/10/12/smkn-4-tasikmalaya-koneksikan-iduka-dengan-pencari-kerja/">Baca Selengkapnya </a>
               </div>
             </div>
@@ -130,7 +58,7 @@
                  src="galeri/b.3.jpg" alt="" width="500px" height="200px" />
               </div>
               <div class="card-body">
-                <h4>jalan santai 17 agustus</h4>
+                <h4>Siswa SMKN 4 Tasikmalaya Adu Inovasi dan Kreativitas di Expo Creanova</h4>
                 <a class="btn btn-info" href="https://radartasik.id/2023/03/02/siswa-smkn-4-tasikmalaya-adu-inovasi-dan-kreativitas-di-expo-creanova/">Baca Selengkapnya </a>
               </div>
             </div>
@@ -147,7 +75,7 @@
                 />
               </div>
               <div class="card-body">
-                <h4>workshop</h4>
+                <h4>Sinergi Bagi Negeri, DAM Kerjasama dengan SMKN 4 Tasikmalaya Terapkan KTBSM Sepeda Motor Astra Honda</h4>
                 <a class="btn btn-info" href="https://jabar.tribunnews.com/2023/03/02/sinergi-bagi-negeri-dam-kerjasama-dengan-smkn-4-tasikmalaya-terapkan-ktbsm-sepeda-motor-astra-honda">Baca Selengkapnya </a>
               </div>
             </div>
@@ -159,7 +87,7 @@
                  src="galeri/b.2.jpeg" alt="" width="500px" height="200px" />
               </div>
               <div class="card-body">
-                <h4>jalan santai 17 agustus</h4>
+                <h4>Honda Resmikan Safety Riding Lab di SMKN 4 Tasikmalaya, Ciptakan Bibit Keselamatan di Jawa Barat</h4>
                 <a class="btn btn-info" href="https://www.pikiran-rakyat.com/otomotif/pr-018109177/honda-resmikan-safety-riding-lab-di-smkn-4-tasikmalaya-ciptakan-bibit-keselamatan-pada-gen-z?page=all">Baca Selengkapnya </a>
               </div>
             </div>
@@ -168,5 +96,7 @@
       </div>
     </div>
     <!-- TUTUP SECTION BERITA -->
+     
+      <?php include 'footer.php';?>
   </body>
 </html>

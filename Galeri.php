@@ -92,8 +92,19 @@
     </nav>
 
     <!-- SECTION GALERI -->
+         <?php
+            $galeri = [
+              'galeri/1.jpg',
+              'galeri/2.jpg',
+              'galeri/3.jpg',
+              'galeri/4.jpg',
+              'galeri/5.jpg',
+              'galeri/6.jpg'
 
-    <!-- galeri 1 -->
+            ];
+            $i = 0;
+         ?>
+   
     <div class="card shadow-lg rounded-2 mt-3">
       <div class="row">
         <div class="col-lg-12">
@@ -106,90 +117,47 @@
         </div>
       </div>
       <div class="row m-2">
+          <?php while ($i < count($galeri)): ?>
         <div class="col-lg-4">
           <div class="card border-0">
-            <img src="galeri/1.JPG" class="img-fluid" alt="" />
+            <img src="<?=$galeri[$i]?>" class="img-fluid" alt="" />
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/2.JPG" class="img-fluid" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/3.JPG" class="img-fluid" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="row m-2 mb-3">
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/4.JPG" class="img-fluid" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/5.JPG" class="img-fluid" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/6.JPG" class="img-fluid" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Tutup galeri 1 -->
+        <?php $i++;?>
+        <?php endwhile;?>
+         <?php
+            $galeri = [
+              'galeri/7.jpg',
+              'galeri/8.jpg',
+              'galeri/9.jpg',
+              'galeri/10.jpg',
+              'galeri/11.jpg',
+              'galeri/7.jpg'
 
-    <!-- galeri 2 -->
+            ];
+            $i = 0;
+         ?>
+   
     <div class="card shadow-lg rounded-2 mt-3">
       <div class="row">
         <div class="col-lg-12">
           <div class="card border-0">
             <div class="text-center mb-4 mt-3">
-              <h5>Ekologi MPLS 2025</h5>
+              <h5>MPLS tahun ajaran 2025</h5>
               <hr class="w-25 mx-auto" />
             </div>
           </div>
         </div>
       </div>
       <div class="row m-2">
+          <?php while ($i < count($galeri)): ?>
         <div class="col-lg-4">
           <div class="card border-0">
-            <img src="galeri/8.JPG" class="img-fluid" alt="" />
+            <img src="<?=$galeri[$i]?>" class="img-fluid" alt="" />
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/10.jpg" class="img-fluid" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/8.JPG" class="img-fluid" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="row m-2 mb-3">
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/9.jpg" class="img-fluid" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/10.jpg" class="img-fluid" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-0">
-            <img src="galeri/11.jpg" class="img-fluid" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Tutup galeri 2 -->
+        <?php $i++;?>
+        <?php endwhile;?>
 
     <!-- SECTION FOOTER -->
     <div class="row">

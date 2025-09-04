@@ -86,82 +86,52 @@
         </div>
       </div>
     </nav>
-    <!-- SECTION IDENTITAS -->
-    <section>
-      <div class="container px-5 mt-3">
-        <div class="row">
-          <div class="col-lg-12">
-            <h3 class="mb-0">Identitas</h3>
-            <h3 class="text-info">Sekolah</h3>
-            <div class="row">
-              <div class="col-lg-12 d-flex justify-content-center">
-                <div class="card border-0 mb-3">
-                  <img
-                    src="galeri/LOGO-SMK4.Ba-Cc_BE.png"
-                    alt=""
-                    width="200"
-                    height="200"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3 shadow-sm rounded-4">
-              <div class="col-lg-4 mt-2">
-                <div class="card mx-4 border-0">
-                  <p>Nama Sekolah</p>
-                  <p>NPSN</p>
-                  <p>Alamat</p>
-                  <br />
-                  <p>Telp/faks</p>
-                  1
-                  <p>Email</p>
-                  <p>Tahun Berdiri/Beroperasi</p>
-                  <p>Nomor SK Pendirian</p>
-                  <p>Tanggal SK Pendirian</p>
-                  <p>Kepemilikan</p>
-                </div>
-              </div>
-              <div class="col-lg-2 mt-2">
-                <div class="card mx-4 border-0">
-                  <p>:</p>
-                  <p>:</p>
-                  <p>:</p>
-                  <br />
-                  <p>:</p>
-                  <p>:</p>
-                  <p>:</p>
-                  <p>:</p>
-                  <p>:</p>
-                  <p>:</p>
-                </div>
-              </div>
-              <div class="col-lg-6 mt-2">
-                <div class="card mx-2 border-0">
-                  <p>SMK Negeri 4 Kota Tasikmalaya</p>
-                  <p>20276063</p>
-                  <p>
-                    Jl Depok RT 02 RW 05, Kelurahan Sukamenak, Kecamatan
-                    Purbaratu, Kota Tasikmalaya, Provinsi Jawabarat
-                  </p>
-                  <p>(0265) 7528981</p>
-                  <p>info@smkn4-tsm.sch.id</p>
-                  <p>2010</p>
-                  <p>420/9/SK-BPPT/2012</p>
-                  <p>06 Februari 2012</p>
-                  <p>Pemerintah Daerah</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- TUTUP SECTION IDENTITAS -->
+    <!-- TUTUP NAVBAR -->
 
-  
-      <!-- SECTION FOOTER -->
-       <footer class="bg text-white py-4">
-     
+    <!-- SECTION ESKUL -->
+
+     <?php 
+            // Data ekskul
+            $eskul = [
+                ["img" => "galeri/futsal.CyJOdm1z.png", "nama" => "PUTSAL"],
+                ["img" => "galeri/paskibra.CUSrUT02.png", "nama" => "PASKIBRA"],
+                ["img" => "galeri/pd.BOb73STp.jpg", "nama" => "PD"],
+                ["img" => "galeri/pks.Dq5fCjv5.png", "nama" => "PKS"],
+                ["img" => "galeri/plh.CiRRajfk.png", "nama" => "PLH"],
+                ["img" => "galeri/volly.Cc0VXRG-.jpeg", "nama" => "VOLLY"],
+            ];
+
+            $i = 0; 
+            ?>
+    <section>
+        <div class="container px-5 mt-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card border-0">
+                        <h3 class="mb-0">Ekstrakurrikuler</h3>
+                        <h3 class="text-primary ">Siswa</h3>
+                        <div class="row">
+                            <?php while ($i < count($eskul)): ?>
+                        <div class="col-lg-4">
+                            <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                                <img src="<?= $eskul[$i]['img']?>" alt="" width="150" height="150">
+                                <div class="card-body text-center border-0">
+                                    <h4><?= $eskul[$i]['nama'] ?></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <?php $i++; // naikin index ?>
+                        <?php endwhile; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TUTUP SECTION ESKUL -->
+
+    
+           <!-- SECTION FOOTER -->
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
@@ -245,6 +215,6 @@
         </div>
       </div>
       <!-- TUTUP SECTION FOOTER -->
-
+    </div>
   </body>
 </html>
