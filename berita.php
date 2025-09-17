@@ -28,9 +28,6 @@
             <h3 class="mb-0">Berita </h3>
             <h3 class="text-info">terbaru</h3>
             <div class="row">
-              <h6>Berita terbaru, cerita inspiratif</h6>
-               <h6>  dan informasi terkini seputar kegiatan</h6>
-                  <h6>serta prestasi sekolah kami.</h6>
             </div>
           </div>
         </div>

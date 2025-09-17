@@ -17,92 +17,20 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="galeri/LOGO-SMK4.Ba-Cc_BE.png"
-            alt=""
-            width="50"
-            height="50"
-          />
-          <span class="text-white">SMKN 4 TASIKMALAYA</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                profil
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="identitas.html">identitas</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="sejarah.html">sejarah</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="visimisi.html">visi & misi</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="kepalasekolah.html"
-                    >kepala sekolah</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ektakulikuler.html">Ekstrakurikuler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Galeri.html">Galeri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="konsentrasi.html"
-                >konsentrasi keahlian</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="berita.html">Berita</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <?php include 'navbar.php';?>
 
     <!-- SECTION GALERI -->
          <?php
-            $galeri = [
-              'galeri/1.jpg',
-              'galeri/2.jpg',
-              'galeri/3.jpg',
-              'galeri/4.jpg',
-              'galeri/5.jpg',
-              'galeri/6.jpg'
+            $hut = [
+              "galeri/1.jpg",
+              "galeri/2.jpg",
+              "galeri/3.jpg",
+              "galeri/4.jpg",
+              "galeri/5.jpg",
+              "galeri/6.jpg"
 
             ];
-            $i = 0;
+           
          ?>
    
     <div class="card shadow-lg rounded-2 mt-3">
@@ -117,14 +45,13 @@
         </div>
       </div>
       <div class="row m-2">
-          <?php while ($i < count($galeri)): ?>
+          <?php foreach ($hut as $gambar): ?>
         <div class="col-lg-4">
           <div class="card border-0">
-            <img src="<?=$galeri[$i]?>" class="img-fluid" alt="" />
+            <img src="<?=$gambar?>" class="img-fluid" alt="" />
           </div>
         </div>
-        <?php $i++;?>
-        <?php endwhile;?>
+        <?php endforeach;?>
          <?php
             $galeri = [
               'galeri/7.jpg',
@@ -135,7 +62,7 @@
               'galeri/7.jpg'
 
             ];
-            $i = 0;
+           
          ?>
    
     <div class="card shadow-lg rounded-2 mt-3">
@@ -150,14 +77,14 @@
         </div>
       </div>
       <div class="row m-2">
-          <?php while ($i < count($galeri)): ?>
+          <?php foreach ($hut as $gambar): ?>
         <div class="col-lg-4">
           <div class="card border-0">
-            <img src="<?=$galeri[$i]?>" class="img-fluid" alt="" />
+            <img src="<?=$gambar?>" class="img-fluid" alt="" />
           </div>
         </div>
-        <?php $i++;?>
-        <?php endwhile;?>
+        
+        <?php endforeach;?>
 
     <!-- SECTION FOOTER -->
     <div class="row">

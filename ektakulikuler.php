@@ -1,220 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./vendor/bs/bs.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <title>SMKN 4 Tasikmalaya</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="galeri/LOGO-SMK4.Ba-Cc_BE.png"
-            alt=""
-            width="50"
-            height="50"
-        />  <span class="text-white">SMKN 4 TASIKMALAYA</span></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                profil
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="identitas.html">identitas</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="sejarah.html">sejarah</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="visimisi.html">visi & misi</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="kepalasekolah.html"
-                    >kepala sekolah</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ektakulikuler.html">Ekstrakurikuler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Galeri.html">Galeri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="konsentrasi.html">konsentrasi keahlian</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="berita.html">Berita</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- TUTUP NAVBAR -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <?php include 'navbar.php'; ?>
 
     <!-- SECTION ESKUL -->
+    
 
-     <?php 
-            // Data ekskul
-            $eskul = [
-                ["img" => "galeri/futsal.CyJOdm1z.png", "nama" => "PUTSAL"],
-                ["img" => "galeri/paskibra.CUSrUT02.png", "nama" => "PASKIBRA"],
-                ["img" => "galeri/pd.BOb73STp.jpg", "nama" => "PD"],
-                ["img" => "galeri/pks.Dq5fCjv5.png", "nama" => "PKS"],
-                ["img" => "galeri/plh.CiRRajfk.png", "nama" => "PLH"],
-                ["img" => "galeri/volly.Cc0VXRG-.jpeg", "nama" => "VOLLY"],
-            ];
-
-            $i = 0; 
-            ?>
     <section>
         <div class="container px-5 mt-3">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card border-0">
-                        <h3 class="mb-0">Ekstrakurrikuler</h3>
-                        <h3 class="text-primary ">Siswa</h3>
+                        <h3 class="mb-0 text-center">Ekstrakurikuler</h3>
+                        <h3 class="text-primary text-center">Siswa</h3>
+                        <div class="mt-4 text-center">
+        <input type="text" id="searchEskul" class="form-control w-50 d-inline-block" placeholder="Cari ekstrakurikuler..." />
+    </div>
+
+    <script>
+        const input = document.getElementById('searchEskul');
+        input.addEventListener('keyup', function () {
+            const filter = input.value.toLowerCase();
+            const cards = document.querySelectorAll('[id^="eskul-"]');
+
+            cards.forEach(card => {
+                const idName = card.id.replace('eskul-', '').toLowerCase();
+                const h4Name = card.querySelector('h4').textContent.toLowerCase();
+
+                if (idName.includes(filter) || h4Name.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
                         <div class="row">
-                            <?php while ($i < count($eskul)): ?>
-                        <div class="col-lg-4">
-                            <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
-                                <img src="<?= $eskul[$i]['img']?>" alt="" width="150" height="150">
-                                <div class="card-body text-center border-0">
-                                    <h4><?= $eskul[$i]['nama'] ?></h4>
+                            <div class="col-lg-4" id="eskul-paskibra">
+                                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                                    <img src="galeri/futsal.CyJOdm1z.png" alt="Paskibra" width="150" height="150" />
+                                    <div class="card-body border-0">
+                                        <h4>PUTSAL</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <?php $i++; // naikin index ?>
-                        <?php endwhile; ?>
+
+                            <div class="col-lg-4" id="eskul-pramuka">
+                                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                                    <img src="galeri/paskibra.CUSrUT02.png" alt="Pramuka" width="150" height="150" />
+                                    <div class="card-body border-0">
+                                        <h4>PASKIBRA</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4" id="eskul-pmr">
+                                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                                    <img src="galeri/pd.BOb73STp.jpg" alt="PMR" width="150" height="150" />
+                                    <div class="card-body border-0">
+                                        <h4>pd</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4" id="eskul-plh">
+                                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                                    <img src="galeri/pks.Dq5fCjv5.png" alt="PLH" width="150" height="150" />
+                                    <div class="card-body border-0">
+                                        <h4>PKS</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4" id="eskul-perisai-diri">
+                                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                                    <img src="galeri/plh.CiRRajfk.png" alt="Perisai Diri" width="150" height="150" />
+                                    <div class="card-body text-center border-0">
+                                        <h4>PLH</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4" id="eskul-itclub">
+                                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                                    <img src="galeri/pmr.DcEPzLrL.png" alt="IT Club" width="150" height="150" />
+                                    <div class="card-body border-0">
+                                        <h4>PMR</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4" id="eskul-english-club">
+                                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                                    <img src="galeri/pramuka._o46wF_H.png" alt="English Club" width="150" height="150" />
+                                    <div class="card-body border-0">
+                                        <h4>PRAMUKA</h4>
+                                    </div>
+                                </div>
+                           </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- TUTUP SECTION ESKUL -->
 
-    
-           <!-- SECTION FOOTER -->
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="card border-0">
-                <div class="card-body">
-                  <h2>Alamat</h2>
-                  <hr />
-                  <div>
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2131636317513!2d108.25189907357232!3d-7.329939972086937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f59eeb6bda36f%3A0xa9e724a275da6c2d!2sSMK%20Negeri%204%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1755671496167!5m2!1sid!2sid"
-                      width="400"
-                      height="300"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card border-0">
-                <div class="card-body">
-                  <h2>Kontak</h2>
-                  <hr />
-                  <p class="bi bi-telephone m-1">085770605539</p>
-                  <p class="bi bi-envelope">SMKN4@gmail.com</p>
-                  <h2>Media Sosial</h2>
-                  <hr />
-                  <div class="d-flex gap-3">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-tiktok"></i>
-                    <i class="bi bi-youtube"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="card border-0">
-                <div class="card-body">
-                  <h2>Link lainnya</h2>
-                  <hr />
-                  <a
-                    class="text-decoration-none text-black"
-                    href="https://kemendikdasmen.go.id/"
-                    >Kemendikbud</a
-                  >
-                  <br />
-                  <a
-                    class="text-decoration-none text-black"
-                    href="https://kemendikdasmen.go.id/"
-                    >Dapodiknasmen</a
-                  >
-                  <br />
-                  <a
-                    class="text-decoration-none text-black"
-                    href="https://kemendikdasmen.go.id/"
-                    >PSMK</a
-                  >
-                  <br />
-                  <a
-                    class="text-decoration-none text-black"
-                    href="https://kemendikdasmen.go.id/"
-                    >Disdik Jabar</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="text-center">
-              <hr />
-              <small
-                >© 2025. SMK Negeri 4 Tasikmalaya.<br />
-                All rights reserved.</small
-              >
-              <hr />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- TUTUP SECTION FOOTER -->
-    </div>
-  </body>
+    <?php include 'footer.php'; ?>
+</body>
 </html>

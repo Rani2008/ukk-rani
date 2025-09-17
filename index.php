@@ -144,9 +144,6 @@
             <h3 class="mb-0">Berita </h3>
             <h3 class="text-info">terbaru</h3>
             <div class="row">
-              <h6>Berita terbaru, cerita inspiratif</h6>
-               <h6>  dan informasi terkini seputar kegiatan</h6>
-                  <h6>serta prestasi sekolah kami.</h6>
             </div>
           </div>
         </div>
@@ -155,7 +152,7 @@
             <div class="card">
               <div class="card-header justify-content-center">
                 <img class="img-fluid d-block mx-auto"
-                  src="galeri/DSC06614.JPG"
+                  src="galeri/b.1.jpg"
                   alt=""
                   width="500px"
                   height="200px"
@@ -163,7 +160,7 @@
               </div>
               <div class="card-body">
                 <h4>workshop</h4>
-                <a class="btn btn-info" href="#">Baca Selengkapnya </a>
+                <a class="btn btn-info" href="https://radartasik.id/2023/10/12/smkn-4-tasikmalaya-koneksikan-iduka-dengan-pencari-kerja/">Baca Selengkapnya </a>
               </div>
             </div>
           </div>
@@ -175,7 +172,7 @@
               </div>
               <div class="card-body">
                 <h4>jalan santai 17 agustus</h4>
-                <a class="btn btn-info" href="#">Baca Selengkapnya </a>
+                <a class="btn btn-info" href="">Baca Selengkapnya </a>
               </div>
             </div>
           </div>
@@ -242,7 +239,7 @@
             </div>
           </div>
           <div class="text-center my-4">
-            <a href="#" class="btn btn-info">Intip lainnya</a>
+            <a href="Galeri.php" class="btn btn-info">Intip lainnya</a>
           </div>
         </div>
       </div>

@@ -58,7 +58,7 @@
               <a class="nav-link" href="Galeri.php">Galeri</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="konsentrasi.php">konsentrasi keahlian</a>
+              <a class="nav-link" href="konsentrasi.php">konsentrasi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="berita.php">Berita</a>
