@@ -17,109 +17,40 @@
   </head>
 
   <body>
-    <?php include 'navbar.php';?>
-    <!-- SECTION JURUSAN -->
+ <?php include 'navbar.php'; ?>
 
-   <!-- SECTION kosentrasi keahlian -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="mb-0 mt-2">Kosentrasi</h3>
-                    <h3 class="text-primary mb-4">Keahlian</h3>
-                    <div class="card mb-4">
-                        <div class="row">
-                            <div class="col-lg-5  d-flex justify-content-center">
-                                <div class="card border-0 m-3">
-                                    <img src="galeri/tjkt.XeO8V4_I.png" alt="" width="150" height="150" class="img-fluid ">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="card border-0 m-4">
-                                    <h5>Teknik Komputer dan Jaringan (TKJ)</h5>
-                                    <p>Konsentrasi ini fokus pada perancangan, pengelolaan, dan pemeliharaan jaringan
-                                        komputer serta teknologi telekomunikasi.
-                                        Siswa dilatih untuk menguasai teknik instalasi jaringan, administrasi server,
-                                        dan troubleshooting perangkat jaringan.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<?php
+$keahlian = [
+  ['img'=>'galeri/tjkt.XeO8V4_I.png', 'title'=>'Teknik Komputer dan Jaringan (TKJ)', 'desc'=>'Fokus pada perancangan, pengelolaan, dan pemeliharaan jaringan komputer serta teknologi telekomunikasi.'],
+  ['img'=>'galeri/pplg.DhbRSnK2.png', 'title'=>'Pengembangan Perangkat Lunak dan Gim (PPLG)', 'desc'=>'Merancang, mengembangkan, dan mengelola perangkat lunak dan gim.'],
+  ['img'=>'galeri/tbsm.5YZNeyvV.png', 'title'=>'Teknik Sepeda Motor (TSM)', 'desc'=>'Perbaikan, perawatan, dan modifikasi sepeda motor serta bisnis otomotif.'],
+  ['img'=>'galeri/dkv.Btdc-HP2.png', 'title'=>'Desain Komunikasi Visual (DKV)', 'desc'=>'Pengembangan kreatif desain grafis, ilustrasi, animasi, dan media komunikasi visual.'],
+  ['img'=>'galeri/toi.BFD6ZBmB.png', 'title'=>'Teknik Otomasi Industri (TOI)', 'desc'=>'Teknologi otomasi industri, pemrograman PLC, robotika, dan kontrol otomatis.'],
+];
+?>
 
-                    <div class="card mb-4">
-                        <div class="row">
-                            <div class="col-lg-5  d-flex justify-content-center">
-                                <div class="card border-0 m-3">
-                                    <img src="galeri/pplg.DhbRSnK2.png" alt="" width="150" height="150" class="img-fluid ">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="card border-0 m-4 ">
-                                    <h5>Pengembangan Perangkat Lunak dan Gim (PPLG)</h5>
-                                    <p>Bidang ini mempersiapkan siswa untuk merancang, mengembangkan, 
-                                        dan mengelola perangkat lunak dan gim. Siswa akan belajar bahasa pemrograman, 
-                                        pengembangan aplikasi, desain gim, serta pengelolaan proyek teknologi.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<section class="container my-4">
+  <!-- Judul yang lebih kecil -->
+  <h4>Kosentrasi <span class="text-primary">
+    <h4>keahlian</span></h4>
 
-                    <div class="card mb-4">
-                        <div class="row">
-                            <div class="col-lg-5  d-flex justify-content-center">
-                                <div class="card border-0 m-3">
-                                    <img src="galeri/tbsm.5YZNeyvV.png" alt="" width="150" height="150" class="img-fluid ">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="card border-0 m-4">
-                                    <h5>Teknik Sepeda Motor (TSM)</h5>
-                                    <p>Konsentrasi ini mengajarkan keterampilan teknis dalam perbaikan,
-                                         perawatan, dan modifikasi sepeda motor, 
-                                        serta pengetahuan bisnis dan kewirausahaan di bidang otomotif roda dua.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <div class="d-flex flex-column gap-3">
+    <?php foreach($keahlian as $k): ?>
+      <div class="card p-3">
+        <div class="d-flex align-items-center">
+          <img src="<?= $k['img'] ?>" alt="" width="150" height="150" class="me-3" />
+          <div>
+            <h5><?= $k['title'] ?></h5>
+            <p><?= $k['desc'] ?></p>
+          </div>
+        </div>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</section>
 
-                    <div class="card mb-4">
-                        <div class="row">
-                            <div class="col-lg-5  d-flex justify-content-center">
-                                <div class="card border-0 m-3">
-                                    <img src="galeri/dkv.Btdc-HP2.png" alt="" width="150" height="150" class="img-fluid ">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="card border-0 m-4">
-                                    <h5>Desain Komunikasi Visual (DKV)</h5>
-                                    <p>Bidang ini berfokus pada pengembangan kemampuan kreatif dalam desain grafis, ilustrasi, animasi, 
-                                        dan media komunikasi visual untuk berbagai kebutuhan industri kreatif.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<?php include 'footer.php'; ?>
 
-                    <div class="card mb-4">
-                        <div class="row">
-                            <div class="col-lg-5  d-flex justify-content-center">
-                                <div class="card border-0 m-3">
-                                    <img src="galeri/toi.BFD6ZBmB.png" alt="" width="150" height="150" class="img-fluid ">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="card border-0 m-4">
-                                    <h5>Teknik Otomasi Industri (TOI)</h5>
-                                    <p>Konsentrasi ini mendalami teknologi otomasi di industri, meliputi pemrograman PLC, robotika, dan sistem 
-                                        kontrol otomatis untuk meningkatkan efisiensi dan produktivitas di sektor manufaktur.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- TUTUP SECTION kosentrasi keahlian -->
 
-     <?php include 'footer.php';?>
   </body>
 </html>

@@ -70,6 +70,6 @@
        <P> 9. Menanamkan dan membudayakan sikap dan perilaku yang baik pada
         aktivitas di sekolah maupun dalam kehidupan sehari-hari.</P>
 
-      <?php include 'navbar.php';?>
+     <?php include 'footer.php'; ?>
   </body>
 </html>
