@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,10 +15,26 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
 </head>
+=======
+  <body>
+     <style>
+    /* Optional: Hover effect on cards */
+    .card:hover {
+      transition: 0.3s ease-in-out;
+      transform: scale(1.01);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  </style>
+    <?php include 'navbar.php';?>
+    
+        <!-- Section ganbar awal-->
+    <img src="galeri/selamat datang.png" alt="" width="1500px" height="700px" />
+>>>>>>> 984bfd8 (ukk-rani)
 
 <body>
   <?php include 'navbar.php'; ?>
 
+<<<<<<< HEAD
   <!-- Section ganbar awal-->
   <img src="galeri/selamat datang.png" alt="" width="1900px" height="1000px" />
 
@@ -40,6 +57,24 @@
         <div class="p-3 border rounded">
           <h1>Kurniawan S.Pd, M.Pd</h1>
           <p>assalamualaikum warohmatulohi wabarokatuh</p>
+=======
+ 
+     <section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center text-primary mb-3">Sambutan Kepala Sekolah</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img
+          src="galeri/kepalasekolah.CDMQ7SQv (1).png"
+          alt="Pak Kurniawan"
+          class="img-fluid rounded shadow mb-3"
+        />
+        <h5 class="text-dark">Kurniawan S.Pd, M.Pd</h5>
+      </div>
+      <div class="col-md-8">
+        <div class="p-4 bg-white rounded shadow-sm">
+          <p><strong>Assalamualaikum Warohmatullohi Wabarokatuh,</strong></p>
+>>>>>>> 984bfd8 (ukk-rani)
           <p>
             Segala puji dan syukur kita panjatkan kehadirat Allah SWT,
             semoga kita semua ada dalam lindungan-Nya. Dan atas perkenan-Nya
@@ -59,15 +94,24 @@
             bantuan dan persatu atas fasilitasnya yang telah diberikan
             semoga semua yang kita lakukan bermanfaat bagi masyarakat.
           </p>
+<<<<<<< HEAD
           <p>Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
+=======
+          <p><strong>Wassalamu'alaikum Warahmatullahi Wabarakatuh.</strong></p>
+>>>>>>> 984bfd8 (ukk-rani)
         </div>
       </div>
     </div>
   </div>
+<<<<<<< HEAD
   </section>
+=======
+</section>
+>>>>>>> 984bfd8 (ukk-rani)
 
   <!-- tutup sambutan -->
 
+<<<<<<< HEAD
   <!-- section jurusan -->
   <section>
     <div class="container px-5 mt-3">
@@ -76,6 +120,12 @@
           <div class="card border-0">
             <h3 class="mb-0">konsentrasi</h3>
             <h3 class="text-primary ">keahlian</h3>
+=======
+    <!-- section jurusan -->
+     <section>
+      
+        <div class="container px-5 mt-3">
+>>>>>>> 984bfd8 (ukk-rani)
             <div class="row">
               <div class="col-lg-4">
                 <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
@@ -85,6 +135,7 @@
                     <p>Teknik Komputer dan Jaringan</p>
                   </div>
                 </div>
+<<<<<<< HEAD
               </div>
               <div class="col-lg-4">
                 <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
@@ -103,6 +154,39 @@
                     <p>Teknik Bisnis Sepeda Motor</p>
                   </div>
                 </div>
+=======
+            </div>
+        </div>
+     </section>
+    <!-- TUTUP SECTION JURUSAN -->
+
+
+    <!-- SECTION BERITA -->
+    <section>
+      <div class="container px-5 mt-3">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="mb-0">Berita </h3>
+            <h3 class="text-info">terbaru</h3>
+            <div class="row">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header justify-content-center">
+                <img class="img-fluid d-block mx-auto"
+                  src="galeri/DSC06614.JPG"
+                  alt=""
+                  width="500px"
+                  height="200px"
+                />
+              </div>
+              <div class="card-body">
+                <h4>workshop</h4>
+                <a class="btn btn-info" href="berita.php">Baca Selengkapnya </a>
+>>>>>>> 984bfd8 (ukk-rani)
               </div>
             </div>
           </div>
@@ -115,6 +199,7 @@
                   <p>Pengembangan Perangkat Lunak dan Gim</p>
                 </div>
               </div>
+<<<<<<< HEAD
             </div>
             <div class="col-lg-4">
               <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
@@ -123,6 +208,11 @@
                   <h4>DKV</h4>
                   <p>Desain Komunikasi Visual</p>
                 </div>
+=======
+              <div class="card-body">
+                <h4>jalan santai 17 agustus</h4>
+                <a class="btn btn-info" href="berita.php">Baca Selengkapnya </a>
+>>>>>>> 984bfd8 (ukk-rani)
               </div>
             </div>
           </div>

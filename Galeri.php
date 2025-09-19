@@ -17,9 +17,21 @@
   </head>
 
   <body>
+<<<<<<< HEAD
     <?php include 'navbar.php';?>
 
     <!-- SECTION GALERI -->
+=======
+     <style>
+    /* Optional: Hover effect on cards */
+    .card:hover {
+      transition: 0.3s ease-in-out;
+      transform: scale(1.01);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  </style>
+   <?php include 'navbar.php';?>
+>>>>>>> 984bfd8 (ukk-rani)
          <?php
             $hut = [
               "galeri/1.jpg",
@@ -83,6 +95,7 @@
             <img src="<?=$gambar?>" class="img-fluid" alt="" />
           </div>
         </div>
+<<<<<<< HEAD
         
         <?php endforeach;?>
 
@@ -170,5 +183,11 @@
       </div>
     </div>
     <!-- TUTUP SECTION FOOTER -->
+=======
+        <?php $i++;?>
+        <?php endwhile;?>
+     <!-- SECTION FOOTER -->
+    <?php include 'footer.php';?>
+>>>>>>> 984bfd8 (ukk-rani)
   </body>
 </html>

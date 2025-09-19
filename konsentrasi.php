@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./vendor/bs/bs.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <title>SMKN 4 Tasikmalaya</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
+<<<<<<< HEAD
   <body>
  <?php include 'navbar.php'; ?>
 
@@ -53,4 +39,128 @@ $keahlian = [
 
 
   </body>
+=======
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./vendor/bs/bs.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <title>SMKN 4 Tasikmalaya</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <style>
+    /* Optional: Hover effect on cards */
+    .card:hover {
+      transition: 0.3s ease-in-out;
+      transform: scale(1.01);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+  <?php include 'navbar.php'; ?>
+
+  <!-- SECTION KONSENTRASI KEAHLIAN -->
+  <section class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="text-center mb-4">
+        <span class="text-dark">Konsentrasi</span>
+        <span class="text-primary">Keahlian</span>
+      </h2>
+
+      <!-- TKJ -->
+      <div class="card mb-4 shadow-sm border-0">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4 text-center p-4">
+            <img src="galeri/tjkt.XeO8V4_I.png" alt="TKJ" class="img-fluid rounded shadow-sm" width="150" height="150" />
+          </div>
+          <div class="col-md-8 p-4">
+            <h4 class="fw-bold text-uppercase">TKJ</h4>
+            <p class="text-muted small mb-2">Teknik Komputer dan Jaringan</p>
+            <p class="mb-0">
+              Konsentrasi ini fokus pada perancangan, pengelolaan, dan pemeliharaan jaringan komputer serta teknologi
+              telekomunikasi. Siswa dilatih untuk menguasai teknik instalasi jaringan, administrasi server, dan
+              troubleshooting perangkat jaringan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PPLG -->
+      <div class="card mb-4 shadow-sm border-0">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4 text-center p-4">
+            <img src="galeri/pplg.DhbRSnK2.png" alt="PPLG" class="img-fluid rounded shadow-sm" width="150" height="150" />
+          </div>
+          <div class="col-md-8 p-4">
+            <h4 class="fw-bold text-uppercase">PPLG</h4>
+            <p class="text-muted small mb-2">Pengembangan Perangkat Lunak dan Gim</p>
+            <p class="mb-0">
+              Bidang ini mempersiapkan siswa untuk merancang, mengembangkan, dan mengelola perangkat lunak dan gim. Siswa
+              akan belajar bahasa pemrograman, pengembangan aplikasi, desain gim, serta pengelolaan proyek teknologi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TBSM -->
+      <div class="card mb-4 shadow-sm border-0">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4 text-center p-4">
+            <img src="galeri/tbsm.5YZNeyvV.png" alt="TBSM" class="img-fluid rounded shadow-sm" width="150" height="150" />
+          </div>
+          <div class="col-md-8 p-4">
+            <h4 class="fw-bold text-uppercase">TBSM</h4>
+            <p class="text-muted small mb-2">Teknik dan Bisnis Sepeda Motor</p>
+            <p class="mb-0">
+              Konsentrasi ini mengajarkan keterampilan teknis dalam perbaikan, perawatan, dan modifikasi sepeda motor, serta
+              pengetahuan bisnis dan kewirausahaan di bidang otomotif roda dua.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DKV -->
+      <div class="card mb-4 shadow-sm border-0">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4 text-center p-4">
+            <img src="galeri/dkv.Btdc-HP2.png" alt="DKV" class="img-fluid rounded shadow-sm" width="150" height="150" />
+          </div>
+          <div class="col-md-8 p-4">
+            <h4 class="fw-bold text-uppercase">DKV</h4>
+            <p class="text-muted small mb-2">Desain Komunikasi Visual</p>
+            <p class="mb-0">
+              Bidang ini berfokus pada pengembangan kemampuan kreatif dalam desain grafis, ilustrasi, animasi, dan media
+              komunikasi visual untuk berbagai kebutuhan industri kreatif.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOI -->
+      <div class="card mb-4 shadow-sm border-0">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4 text-center p-4">
+            <img src="galeri/toi.BFD6ZBmB.png" alt="TOI" class="img-fluid rounded shadow-sm" width="150" height="150" />
+          </div>
+          <div class="col-md-8 p-4">
+            <h4 class="fw-bold text-uppercase">TOI</h4>
+            <p class="text-muted small mb-2">Teknik Otomasi Industri</p>
+            <p class="mb-0">
+              Konsentrasi ini mendalami teknologi otomasi di industri, meliputi pemrograman PLC, robotika, dan sistem kontrol
+              otomatis untuk meningkatkan efisiensi dan produktivitas di sektor manufaktur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SECTION KONSENTRASI KEAHLIAN -->
+
+  <?php include 'footer.php'; ?>
+</body>
+
+>>>>>>> 984bfd8 (ukk-rani)
 </html>

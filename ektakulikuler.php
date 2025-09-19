@@ -10,8 +10,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </head>
 
+<<<<<<< HEAD
 <body>
     <?php include 'navbar.php'; ?>
+=======
+  <body>
+     <style>
+    /* Optional: Hover effect on cards */
+    .card:hover {
+      transition: 0.3s ease-in-out;
+      transform: scale(1.01);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  </style>
+    
+     <?php include 'navbar.php';?>
+>>>>>>> 984bfd8 (ukk-rani)
 
     <?php
     $eskul = [
@@ -44,6 +58,7 @@
             </div>
         </div>
 
+<<<<<<< HEAD
     </section>
 
     <script>
@@ -61,3 +76,9 @@
     <?php include 'footer.php'; ?>
 </body>
 </html>
+=======
+     <?php include 'footer.php';?>
+    </div>
+  </body>
+</html>
+>>>>>>> 984bfd8 (ukk-rani)

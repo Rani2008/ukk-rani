@@ -40,6 +40,8 @@
 
     <!-- SECTION MISI -->
     <div class="card mt-5 P-5 mx-5">
+        <div class="col-lg-12">
+        <div class="card shadow rouded bg-primary  text-white">
       <h2>misi</h2>
       <p>1. Menyiapkan Sumber Daya Manusia yang cerdas dan kompeten baik
         hardskill maupun softskill.</p>
@@ -69,7 +71,12 @@
 
        <P> 9. Menanamkan dan membudayakan sikap dan perilaku yang baik pada
         aktivitas di sekolah maupun dalam kehidupan sehari-hari.</P>
+    </div>
 
+<<<<<<< HEAD
      <?php include 'footer.php'; ?>
+=======
+      <?php include 'footer.php';?>
+>>>>>>> 984bfd8 (ukk-rani)
   </body>
 </html>

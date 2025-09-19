@@ -17,7 +17,14 @@
   </head>
 
   <body>
-   
+     <style>
+    /* Optional: Hover effect on cards */
+    .card:hover {
+      transition: 0.3s ease-in-out;
+      transform: scale(1.01);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  </style>
       <?php include 'navbar.php';?>
 
      <!-- SECTION BERITA -->

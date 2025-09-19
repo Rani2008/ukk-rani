@@ -72,11 +72,9 @@
               </div>
             </div>
             <div class="text-center">
-              <hr />
-              <small
-                >© 2025. SMK Negeri 4 Tasikmalaya.<br />
-                All rights reserved.</small
-              >
+              <hr>
+              <small>© 2025. SMK Negeri 4 Tasikmalaya.<br />
+                All rights reserved.</small>
               <hr />
             </div>
           </div>
