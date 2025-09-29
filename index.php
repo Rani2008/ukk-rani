@@ -133,7 +133,7 @@
             </div>
         </div>
      </section>
-    <!-- TUTUP SECTION ESKUL -->
+    <!-- TUTUP SECTION jurusan -->
 
 
     <!-- SECTION BERITA -->
