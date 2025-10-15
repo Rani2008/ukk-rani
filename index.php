@@ -69,6 +69,55 @@
     </section>
 
     <!-- tutup sambutan -->
+     <!-- SECTION STATISTIK -->
+    <div class="container my-5">
+       <div class="row text-center g-3">
+            
+            <!-- Guru -->
+            <div class="col-md-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                <i class="bi bi-person-video3 display-4"></i>
+                <h4 class="mt-3">82 Orang</h4>
+                <p>Guru / Pendidik</p>
+                </div>
+            </div>
+            </div>
+
+            <!-- Siswa -->
+            <div class="col-md-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                <i class="bi bi-people-fill display-4"></i>
+                <h4 class="mt-3">1500 Orang</h4>
+                <p>Siswa</p>
+                </div>
+            </div>
+            </div>
+          <!-- Staf TU -->
+            <div class="col-md-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                <i class="bi bi-person-badge-fill display-4"></i>
+                <h4 class="mt-3">10 Orang</h4>
+                <p>Staf TU</p>
+                </div>
+            </div>
+            </div>
+
+            <!-- Ekstrakurikuler -->
+            <div class="col-md-3">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body">
+                <i class="bi bi-lightbulb-fill display-4"></i>
+                <h4 class="mt-3">18</h4>
+                <p>Ekstrakurikuler</p>
+                </div>
+            </div>
+            </div>
+           </div>
+      <!-- TUTUP SECTION STATISTIK -->
+
 
     <!-- section jurusan -->
      <section>
@@ -177,124 +226,45 @@
             </div>
           </div>
         </div>
+         <div class="text-center my-4">
+        <a href="berita.php" class="btn btn-info px-4">Intip Lainnya</a>
+      </div>
+    </div>
       </div>
     </div>
     <!-- TUTUP SECTION BERITA -->
 
     <!-- SECTION GALERI -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>Galeri</h2>
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body justify-content-center">
-                <img
-                  src="galeri/IMG_20250714_100008_610.jpg"
-                  alt=""
-                  class="img-fluid"
-                  width="500px"
-                  height="200px"
-                />
-              </div>
-            </div>
+ <div class="container my-5">
+      <h2 class="text-center  mb-4">galeri</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="galeri/11.jpg" alt="Foto Galeri 1"class="img-fluid" />
           </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body justify-content-center">
-                <img
-                  src="galeri/IMG_20250714_100008_610.jpg"
-                  alt=""
-                  class="img-fluid"
-                  width="600px"
-                  height="300px"
-                />
-              </div>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="galeri/7.jpg" alt="" class="img-fluid" />
           </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body justify-content-center">
-                <img
-                  src="galeri/IMG_20250714_100008_610.jpg"
-                  alt=""
-                  class="img-fluid"
-                  width="400px"
-                  height="100px"
-                />
-              </div>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="galeri/IMG_20250714_100008_610.jpg" alt="" class="img-fluid" />
           </div>
-           <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body justify-content-center">
-                <img
-                  src="galeri/IMG_20250714_100008_610.jpg"
-                  alt=""
-                  class="img-fluid"
-                  width="400px"
-                  height="100px"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="text-center my-4">
-            <a href="Galeri.php" class="btn btn-info">Intip lainnya</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="galeri/9.jpg" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
-      <!-- TUTUP SECTION GALERI -->
-
-
-    <!-- SECTION STATISTIK -->
-    <div class="container my-5">
-       <div class="row text-center g-3">
-            
-            <!-- Guru -->
-            <div class="col-md-3">
-            <div class="card bg-primary text-white h-100">
-                <div class="card-body">
-                <i class="bi bi-person-video3 display-4"></i>
-                <h4 class="mt-3">82 Orang</h4>
-                <p>Guru / Pendidik</p>
-                </div>
-            </div>
-            </div>
-
-            <!-- Siswa -->
-            <div class="col-md-3">
-            <div class="card bg-primary text-white h-100">
-                <div class="card-body">
-                <i class="bi bi-people-fill display-4"></i>
-                <h4 class="mt-3">1500 Orang</h4>
-                <p>Siswa</p>
-                </div>
-            </div>
-            </div>
-          <!-- Staf TU -->
-            <div class="col-md-3">
-            <div class="card bg-primary text-white h-100">
-                <div class="card-body">
-                <i class="bi bi-person-badge-fill display-4"></i>
-                <h4 class="mt-3">10 Orang</h4>
-                <p>Staf TU</p>
-                </div>
-            </div>
-            </div>
-
-            <!-- Ekstrakurikuler -->
-            <div class="col-md-3">
-            <div class="card bg-primary text-white h-100">
-                <div class="card-body">
-                <i class="bi bi-lightbulb-fill display-4"></i>
-                <h4 class="mt-3">18</h4>
-                <p>Ekstrakurikuler</p>
-                </div>
-            </div>
-            </div>
-           </div>
-      <!-- TUTUP SECTION STATISTIK -->
-
+</div>
+      <div class="text-center my-4">
+        <a href="galeri.php" class="btn btn-info px-4">Intip Lainnya</a>
+      </div>
+    </div>
+  <!-- TUTUP GALERI -->
        <?php include 'footer.php';?>
     
   </body>

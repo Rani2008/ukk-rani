@@ -37,11 +37,11 @@
                     <div class="col d-flex justify-content-center">
                       <div class="card my-3">
                         <img
-                          src="galeri/sejarahsmkn4.L2FuXsGa.jpg"
+                          src="galeri/r.jpeg"
                           class="img-fluid rounded-3"
                           alt=""
                           width="900"
-                          height="990"
+                          height="800"
                         />
                       </div>
                     </div>
